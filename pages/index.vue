@@ -1,24 +1,13 @@
 <template>
   <section class="container">
-    <HeadMenu />
     <div class="name">
-      <h1 class="title">
+      <h1 class="title">БББ
       </h1>
       <h2 class="subtitle">
       </h2>
     </div>
   </section>
 </template>
-
-<script>
-import HeadMenu from "@/components/HeadMenu";
-
-export default {
-  components: {
-    HeadMenu,
-  }
-}
-</script>
 
 <style>
 .container {

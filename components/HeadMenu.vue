@@ -1,11 +1,60 @@
 <template>
-  <div class="header">
-    <div class="menu-item">Об ассоциации</div>
-    <div class="menu-item">Членство СРО</div>
-    <div class="menu-item">Информация, обязательная для размещения</div>
-    <div class="menu-item">Законодательство</div>
-    <div class="menu-item">Реестр членов</div>
-    <div class="menu-item">Контакты</div>
+  <div class="container-fluid title">
+    <div class="bar">
+      <div class="bar_item bar_year">
+        2012
+      </div>
+      <div class="bar_item bar_license">
+        СРО-П-174-01102012
+      </div>
+      <div class="bar_item bar_requirements">
+        Новые требования к членству
+      </div>
+    </div>
+    <div class="menu">
+      <NuxtLink
+        to="/"
+        class="menu-item"
+      >
+        Главная
+      </NuxtLink>
+      <NuxtLink
+        to="/about"
+        class="menu-item"
+      >
+        Об ассоциации
+      </NuxtLink>
+      <NuxtLink
+        to="/membership"
+        class="menu-item"
+      >
+        Членство СРО
+      </NuxtLink>
+      <NuxtLink
+        to="/info"
+        class="menu-item"
+      >
+        Информация, обязательная для размещения
+      </NuxtLink>
+      <NuxtLink
+        to="/law"
+        class="menu-item"
+      >
+        Законодательство
+      </NuxtLink>
+      <NuxtLink
+        to="/registry"
+        class="menu-item"
+      >
+        Реестр членов
+      </NuxtLink>
+      <NuxtLink
+        to="/contacts"
+        class="menu-item"
+      >
+        Контакты
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -16,22 +65,46 @@ export default {
 </script>
 
 <style scoped>
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.title {
   width: 100%;
-  height: 70px;
+  height: 100px;
   background: #eeeeee;
-  padding: 10px 30px;
+  justify-content: space-around;
 }
 
-.menu-item{
+.menu {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.menu-item {
+  margin: auto;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 5px;
-  margin: 5px;
   text-align: center;
+}
+
+.bar {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bar_item {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-left: 10px;
+  background: yellow;
+}
+
+.bar_requirements {
+  background: yellow;
 }
 </style>

@@ -1,42 +1,36 @@
 <template>
-  <section class="container">
-    <div class="name">
-      <h1 class="title">БББ
-      </h1>
-      <h2 class="subtitle">
-      </h2>
-    </div>
+  <section class="default-layout">
+    <SplashBlock />
+    <RegistryAlert />
+    <AboutIndex />
+    <FormInfoWrapper />
+    <AttentionBlock />
+    <JoinBlock />
   </section>
 </template>
 
+<script>
+import SplashBlock from "@/components/indx/SplashBlock";
+import RegistryAlert from "@/components/indx/RegistryAlert";
+import AboutIndex from "@/components/indx/AboutIndex";
+import FormInfoWrapper from "@/components/indx/FormInfoWrapper";
+import AttentionBlock from "@/components/indx/AttentionBlock";
+import JoinBlock from "@/components/indx/JoinBlock";
+
+export default {
+  transition: 'fade',
+
+  components: {
+    SplashBlock,
+    RegistryAlert,
+    AboutIndex,
+    FormInfoWrapper,
+    AttentionBlock,
+    JoinBlock,
+  },
+}
+</script>
+
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-}
-
-.name{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
 </style>
 

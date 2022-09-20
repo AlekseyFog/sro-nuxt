@@ -1,16 +1,5 @@
 <template>
   <div class="container-fluid title">
-    <div class="bar">
-      <div class="bar_item bar_year">
-        2012
-      </div>
-      <div class="bar_item bar_license">
-        СРО-П-174-01102012
-      </div>
-      <div class="bar_item bar_requirements">
-        Новые требования к членству
-      </div>
-    </div>
     <div class="menu">
       <NuxtLink
         to="/"
@@ -66,8 +55,10 @@ export default {
 
 <style scoped>
 .title {
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 100px;
+  height: 70px;
   background: #eeeeee;
   justify-content: space-around;
 }
@@ -86,25 +77,25 @@ export default {
   font-weight: bold;
   text-align: center;
 }
+a {
+  color: black;
+}
 
-.bar {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 14px;
+a:hover{
+  text-decoration: none;
+  border-bottom: 1px solid #FABB38;
+}
+
+a:visited{
+  color: black;
+}
+
+a.nuxt-link-active {
   font-weight: bold;
 }
-
-.bar_item {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px;
-  margin-left: 10px;
-  background: yellow;
+a.nuxt-link-exact-active {
+  border-bottom: 2px solid #35495E;
 }
 
-.bar_requirements {
-  background: yellow;
-}
+
 </style>

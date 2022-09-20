@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Title />
     <HeadMenu />
     <nuxt/>
   </div>
@@ -7,17 +8,14 @@
 
 <script>
 import HeadMenu from "@/components/HeadMenu";
+import Title from "@/components/Title";
 
 export default {
   transition: 'fade',
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-    })
-  },
+
   components: {
     HeadMenu,
+    Title,
   },
 }
 </script>

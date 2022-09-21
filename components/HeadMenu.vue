@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid title">
+  <div class="container-fluid d-none d-lg-block title">
     <div class="menu">
       <NuxtLink
         to="/"

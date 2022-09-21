@@ -27,7 +27,7 @@ export default {
   justify-content: flex-start;
   font-size: 14px;
   font-weight: bold;
-  background: #eeeeee;
+  background: #228dfe;
 }
 
 .bar_item {

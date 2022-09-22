@@ -33,7 +33,7 @@ export default {
 .alert{
   padding: 30px;
   margin-top: -100px;
-  background: #eeeeee;
+  background: #ffffff;
   border: 1px solid #cccccc;
   box-shadow: 1px 1px #cccccc;
 }

@@ -61,6 +61,8 @@ export default {
   height: 70px;
   background: #eeeeee;
   justify-content: space-around;
+  z-index: 999;
+  border-bottom: 1px solid #30182D;
 }
 
 .menu {
@@ -94,7 +96,7 @@ a.nuxt-link-active {
   font-weight: bold;
 }
 a.nuxt-link-exact-active {
-  border-bottom: 2px solid #35495E;
+  border-bottom: 2px solid #FABB38;
 }
 
 

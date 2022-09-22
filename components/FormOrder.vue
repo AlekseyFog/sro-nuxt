@@ -23,7 +23,10 @@
       type="email"
       placeholder="Email"
     >
-    <textarea class="form_input"/>
+    <textarea
+      placeholder="Сообщение..."
+    />
+    <button class="form_button"> Отправить </button>
   </div>
 </template>
 
@@ -40,7 +43,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   padding: 15px;
-  background: #eeeeee;
+  background: #ffffff;
   border: 1px solid #cccccc;
   box-shadow: 1px 1px #cccccc;
 }
@@ -49,21 +52,38 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .form_title__text{
   font-size: 20px;
   font-weight: bold;
 }
 .form_input{
-  height: 30px;
+  width: 250px;
+  height: 40px;
   border: 1px solid #cccccc;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .form_input:first-child{
-  margin-top: 15px;
+  margin-top: 30px;
 }
-.form_input:last-child{
+textarea{
+  width: 250px;
+  height: 80px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.form_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FABB38;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
   height: 50px;
+  width: 200px;
 }
 </style>

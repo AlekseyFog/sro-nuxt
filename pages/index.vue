@@ -6,6 +6,8 @@
     <FormInfoWrapper />
     <AttentionBlock />
     <JoinBlock />
+    <GovLicense />
+
   </section>
 </template>
 
@@ -16,11 +18,13 @@ import AboutIndex from "@/components/indx/AboutIndex";
 import FormInfoWrapper from "@/components/indx/FormInfoWrapper";
 import AttentionBlock from "@/components/indx/AttentionBlock";
 import JoinBlock from "@/components/indx/JoinBlock";
+import GovLicense from "@/components/indx/GovLicense";
 
 export default {
   transition: 'fade',
 
   components: {
+    GovLicense,
     SplashBlock,
     RegistryAlert,
     AboutIndex,

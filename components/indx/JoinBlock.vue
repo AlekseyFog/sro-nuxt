@@ -17,7 +17,9 @@
           Вступить в СРО сегодня - это возможность получить выгоду уже завтра!
         </p>
       </div>
-      <div class="col-12 col-md-6"></div>
+      <div class="col-12 col-md-6 join_block__button_wrap">
+        <div class="join_block__button">Перейти к разделу</div>
+      </div>
     </div>
   </div>
 </template>
@@ -49,6 +51,22 @@ export default {
 .join_block__title-space{
   margin-top: 20px;
   font-size: 30px;
+}
+.join_block__button_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.join_block__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FABB38;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: 50px;
+  width: 250px;
 }
 
 </style>

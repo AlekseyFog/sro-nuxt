@@ -58,7 +58,7 @@ export default {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 50px;
   background: #eeeeee;
   justify-content: space-around;
   z-index: 999;

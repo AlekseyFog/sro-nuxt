@@ -1,14 +1,16 @@
 <template>
   <div>
-    <Title />
-    <HeadMenu />
-    <nuxt/>
+    <Title/>
+    <HeadMenu/>
+    <nuxt class="main"/>
+    <MainFooter/>
   </div>
 </template>
 
 <script>
 import HeadMenu from "@/components/HeadMenu";
 import Title from "@/components/Title";
+import MainFooter from "@/components/MainFooter";
 
 export default {
   transition: 'fade',
@@ -16,12 +18,13 @@ export default {
   components: {
     HeadMenu,
     Title,
+    MainFooter,
   },
 }
 </script>
 
 <style>
-html, body{
+html, body {
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -36,6 +39,10 @@ html, body{
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.main{
+  min-height: calc(100vh - 170px);
 }
 </style>
 

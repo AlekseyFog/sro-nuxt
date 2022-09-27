@@ -7,7 +7,6 @@
     <AttentionBlock />
     <JoinBlock />
     <GovLicense />
-
   </section>
 </template>
 

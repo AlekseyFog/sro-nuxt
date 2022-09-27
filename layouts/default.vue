@@ -29,6 +29,7 @@ html, body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
+  line-height: 1.5;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -42,7 +43,26 @@ html, body {
 }
 
 .main{
-  min-height: calc(100vh - 170px);
+  min-height: calc(100vh - 190px);
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.5s;
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+}
+
 </style>
 

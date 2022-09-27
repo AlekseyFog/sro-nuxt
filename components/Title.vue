@@ -6,9 +6,11 @@
     <div class="bar_item bar_license">
       СРО-П-174-01102012
     </div>
-    <div class="bar_item bar_requirements">
+    <NuxtLink
+      to="/newMembership"
+      class="bar_item bar_requirements">
       Новые требования к членству
-    </div>
+    </NuxtLink>
   </div>
 </template>
 
@@ -44,7 +46,8 @@ export default {
 }
 
 .bar_requirements {
-  background: #FABB38;
+  background: #ffffff;
   margin-left: 50px;
+  border-radius: 3px;
 }
 </style>

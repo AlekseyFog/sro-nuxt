@@ -69,4 +69,13 @@ export default {
   width: 250px;
 }
 
+@media (max-width: 992px) {
+  .question_block{
+    font-size: 25px;
+  }
+  .join_block__title-space{
+    font-size: 25px;
+  }
+}
+
 </style>

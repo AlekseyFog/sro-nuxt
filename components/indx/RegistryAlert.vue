@@ -38,4 +38,9 @@ export default {
   box-shadow: 1px 1px #cccccc;
 }
 
+@media (max-width: 992px) {
+  .alert{
+    margin-top: 0;
+  }
+}
 </style>

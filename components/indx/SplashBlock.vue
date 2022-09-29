@@ -1,7 +1,7 @@
 <template>
   <div class="splash-container container-fluid">
     <div class="row splash">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-lg-8">
         <div class="splash__title">
           АССОЦИАЦИЯ
           <br />
@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 splash__join">
+      <div class="col-12 col-lg-4 splash__join">
         <div class="">
           <div class="splash__join_title">вступление в СРО</div>
           <div class="splash__join_button">получить консультацию</div>
@@ -113,5 +113,21 @@ export default {
   margin: 40px auto 0;
   box-shadow: 1px 1px #35495E;
   max-width: 320px;
+}
+
+@media (max-width: 992px) {
+  .splash__title{
+    font-size: 20px;
+  }
+  .norap{
+    font-size: 25px;
+  }
+  .splash__advantages{
+    font-size: 20px;
+  }
+  .splash__join_title{
+    font-size: 35px;
+    margin-top: 30px;
+  }
 }
 </style>

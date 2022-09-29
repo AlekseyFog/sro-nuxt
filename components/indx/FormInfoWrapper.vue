@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-5">
+      <div class="col-12 col-lg-5">
         <FormOrder/>
         <img
           src="~/assets/reestr2.png"
@@ -9,7 +9,7 @@
           class="registry-link_img"
         />
       </div>
-      <div class="col-7 infoblock">
+      <div class="col-12 col-lg-7 infoblock">
         <img
           src="~/assets/activechelen.png"
           alt="img"
@@ -67,17 +67,17 @@ export default {
 }
 
 .infoblock_img {
-  width: 609px;
-  height: 120px;
+  /*width: 609px;*/
+  /*height: 120px;*/
   margin-bottom: 30px;
 }
 .infoblock_img img {
-  width: 609px;
-  height: 120px;
+  /*width: 609px;*/
+  /*height: 120px;*/
 }
 .registry-link_img{
   margin-top: 30px;
-  width: 450px;
+  max-width: 320px;
 }
 .infoblock_text__header{
   font-size: 20px;
@@ -123,5 +123,11 @@ export default {
   border-radius: 5px;
   height: 50px;
   width: 250px;
+}
+@media (max-width: 992px) {
+  .infoblock_img{
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 </style>

@@ -256,4 +256,10 @@ export default {
 .about_header {
   margin-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+  h4{
+    font-size: 20px;
+  }
+}
 </style>

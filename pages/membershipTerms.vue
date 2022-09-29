@@ -72,4 +72,10 @@ li{
   padding: 10px;
   margin: 20px 0;
 }
+
+@media (max-width: 768px) {
+  h3{
+    margin-top: 30px;
+  }
+}
 </style>

@@ -5,13 +5,12 @@
         НА ЧТО СЛЕДУЕТ ОБРАТИТЬ ВНИМАНИЕ ПРИ ВСТУПЛЕНИИ В СРО:
       </h3>
     </div>
-    <div class="row attention_block">
-      <div class="col-12">
-        <ol class="attention_list">
-          <li class="attention_list__item">Наличие и состав сведений о СРО в реестре Ростехнадзора</li>
-          <li class="attention_list__item">Законность оплаты взноса за счет заемных средств</li>
-          <li class="attention_list__item">Минимальный размер страховой суммы по договорам страхования ответственности членов СРО</li>
-        </ol>
+    <div class="row attention_list">
+      <div class="attention_list__item col-12 col-md-3">Наличие и состав сведений о СРО в реестре Ростехнадзора</div>
+      <div class="attention_list__item col-12 col-md-3">Законность оплаты взноса за счет заемных средств</div>
+      <div class="attention_list__item col-12 col-md-3">Минимальный размер страховой суммы по договорам страхования
+        ответственности
+        членов СРО
       </div>
     </div>
   </div>
@@ -24,16 +23,18 @@ export default {
 </script>
 
 <style scoped>
-.attention{
+.attention {
   margin-top: 80px;
 }
-.attention_header{
+
+.attention_header {
   font-size: 30px;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
-.attention_header:after{
+
+.attention_header:after {
   background-color: #FABB38;
   content: "";
   display: block;
@@ -43,14 +44,15 @@ export default {
   margin-bottom: 20px;
 }
 
-.attention_list{
+.attention_list {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
 }
-.attention_list__item{
+
+.attention_list__item {
   font-size: 20px;
   padding: 10px;
   background-color: white;
@@ -58,7 +60,8 @@ export default {
   border: 1px solid #cccccc;
   margin-right: 25px;
 }
-.attention_list__item::marker{
-content: '';
+
+.attention_list__item::marker {
+  content: '';
 }
 </style>

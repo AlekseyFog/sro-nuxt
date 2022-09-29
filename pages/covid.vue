@@ -52,4 +52,10 @@ export default {
 .covid{
   padding: 30px;
 }
+
+@media (max-width: 768px) {
+  h2{
+    font-size: 25px;
+  }
+}
 </style>

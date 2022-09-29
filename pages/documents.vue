@@ -45,4 +45,10 @@ export default {
 .doc_img{
   margin: 10px 0;
 }
+
+@media (max-width: 768px) {
+  .doc_img{
+    max-width: 320px;
+  }
+}
 </style>

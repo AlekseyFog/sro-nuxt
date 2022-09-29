@@ -50,4 +50,10 @@ export default {
   margin-left: 50px;
   border-radius: 3px;
 }
+
+@media(max-width: 992px){
+  .bar{
+    font-size: 10px;
+  }
+}
 </style>

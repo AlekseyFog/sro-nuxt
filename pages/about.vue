@@ -36,4 +36,10 @@ export default {
 .about_header{
   margin-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+  .about_header{
+    font-size: 35px;
+  }
+}
 </style>

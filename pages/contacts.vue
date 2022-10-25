@@ -1,48 +1,59 @@
 <template>
   <div class="contacts container">
     <div class="row">
-      <div class="col-12 card">
-        <yandexMap
-          :coords="coords"
-          :zoom="10"
-        >
-          <ymapMarker
-            :coords="coords"
-            :marker-id="123"
-          />
-        </yandexMap>
-      </div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-4">
-        <h3>Наш адрес:</h3>
+      <div class="col-12 col-md-3">
+        <h4>Наш адрес:</h4>
+        <p>
+          123022, г. Москва, ул. Красная Пресня, д. 28, IV, комната 1 А
+        </p>
+      </div>
+      <div class="col-12 col-md-2">
+        <h4>Телефон:</h4>
+        <p>
+          +7 (812) 458-72-72
+        </p>
+        <p>
+          <span>Мы ждём Ваши звонки с 09 до 17 по МСК</span>
+        </p>
+      </div>
+      <div class="col-12 col-md-3">
+        <h4>Email:</h4>
+        <p><a href="mailto:glawproekt2012@yandex.ru">glawproekt2012@yandex.ru</a></p>
       </div>
       <div class="col-12 col-md-4">
-        <h3>Контактные телефоны:</h3>
-      </div>
-      <div class="col-12 col-md-4">
-        Напишите нам, и Вам будет предоставлен персональный менеджер
+        <FormOrder />
       </div>
     </div>
   </div>
 </template>
 <script>
 
-import { yandexMap, ymapMarker } from 'vue-yandex-maps'
+import FormOrder from "@/components/FormOrder";
+
 
 export default {
   name: "contacts",
-  components: { yandexMap, ymapMarker },
-  data: () => ({
-    coords: [
-      54.82896654088406,
-      39.831893822753904,
-    ],
-}),
-
+  meta: [
+    {hid: 'description', name: 'description', content: 'СРО "Главпроект" - контакты'}
+  ],
+  components: {
+    FormOrder
+  }
 }
 </script>
 
 <style scoped>
+.row{
+  margin: 20px 0;
+}
+h4{
+  margin-bottom: 20px;
+}
 
+span{
+  font-size: 12px;
+  color: gray;
+}
 </style>

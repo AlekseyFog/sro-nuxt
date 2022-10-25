@@ -3,14 +3,25 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'SRO FRONTEND DRIVE V.1.0',
+    title: 'СРО "Главпроект"',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', name: 'description', content: 'SRO FRONTEND DRIVE V.1.0'}
+      {name: 'msapplication-TileColor', content: '#da532c'},
+      {name: 'theme-color', content: '#ffffff'},
+      {hid: 'description', name: 'description', content: 'СРО "Главпроект"'}
+      // {'http-equiv': 'cache-control', content: 'max-age=0'},
+      // {'http-equiv': 'cache-control', content: 'no-cache'},
+      // {'http-equiv': 'pragma', content: 'no-cache'},
+      // {'http-equiv': 'expires', content: '0'},
+      // {'http-equiv': 'expires', content: 'Tue, 01 Jan 1980 1:00:00 GMT'}
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'apple-touch-icon', sizes:'180x180', href: 'favicon/apple-touch-icon.png'},
+      {rel: 'icon', type: 'image/png',sizes:'32x32', href: 'favicon/favicon-32x32.png'},
+      {rel: 'icon', type: 'image/png',sizes:'16x16', href: 'favicon/favicon-16x16.png'},
+      {rel: 'manifest', href: 'favicon/site.webmanifest'},
+      {rel: 'mask-icon', color: '#5bbad5', href: '/favicon/ned-tab.svg'}
     ]
   },
   /*
@@ -32,16 +43,14 @@ module.exports = {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
       }
     }
   },
-  modules: ['bootstrap-vue/nuxt'],
-
-  // plugins: [
-  //   { src: '~/plugins/ymapPlugin.js',  mode: 'client' }
-  // ]
+  modules: [
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/axios'
+  ]
 }
 

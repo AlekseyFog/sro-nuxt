@@ -26,7 +26,12 @@
       <div class="col-12 col-lg-4 splash__join">
         <div class="">
           <div class="splash__join_title">вступление в СРО</div>
-          <div class="splash__join_button">получить консультацию</div>
+          <div
+            class="splash__join_button"
+            @click="showOrderModal()"
+          >
+            получить консультацию
+          </div>
         </div>
       </div>
     </div>
@@ -35,7 +40,13 @@
 
 <script>
 export default {
-  name: "SplashBlock"
+  name: "SplashBlock",
+
+  methods:{
+    showOrderModal(){
+      this.$nuxt.$emit('open-form')
+    }
+  }
 }
 </script>
 
@@ -113,6 +124,7 @@ export default {
   margin: 40px auto 0;
   box-shadow: 1px 1px #35495E;
   max-width: 320px;
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {

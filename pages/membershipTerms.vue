@@ -5,7 +5,7 @@
         <h2> УСЛОВИЯ ВСТУПЛЕНИЯ В СРО </h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row membership__main">
       <div class="col-12 col-lg-4">
         <FormOrder/>
       </div>
@@ -76,6 +76,12 @@ li{
 @media (max-width: 768px) {
   h3{
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .membership__main{
+    flex-direction: column-reverse;
   }
 }
 </style>

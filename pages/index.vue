@@ -20,7 +20,11 @@ import JoinBlock from "@/components/indx/JoinBlock";
 import GovLicense from "@/components/indx/GovLicense";
 
 export default {
+  name: "index",
   transition: 'fade',
+  meta: [
+    {hid: 'description', name: 'description', content: 'СРО "Главпроект" - главная'}
+  ],
 
   components: {
     GovLicense,

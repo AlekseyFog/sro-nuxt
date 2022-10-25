@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid d-none d-lg-block title">
-    <div class="menu">
+  <div class="container-fluid title">
+    <div class="d-none d-lg-flex menu">
       <div class="menu-item">
         <NuxtLink
           to="/"
@@ -21,10 +21,10 @@
             О нас
           </NuxtLink>
           <NuxtLink
-            to="/meet"
+            to="/upQualif"
             class="about-menu__sub-item"
           >
-            Общее собрание
+            Повышение квалификации
           </NuxtLink>
           <NuxtLink
             to="documents"
@@ -60,7 +60,12 @@
           </NuxtLink>
 <!--          <div class="about-menu__sub-item">Образцы доекументов для вступления/выхода из СРО</div>-->
 <!--          <div class="about-menu__sub-item">Информация по выпискам</div>-->
-<!--          <div class="about-menu__sub-item">План проверок</div>-->
+          <NuxtLink
+            to="/check"
+            class="about-menu__sub-item"
+          >
+            План проверок
+          </NuxtLink>
           <NuxtLink
             to="/insurance"
             class="about-menu__sub-item"
@@ -99,12 +104,24 @@
         </NuxtLink>
       </div>
     </div>
+    <img
+      src="~/assets/menu-mobile.png"
+      alt="logo"
+      class="mobile-menu-button d-lg-none"
+      @click = 'showMenu()'
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "header"
+  name: "header",
+
+  methods:{
+    showMenu(){
+      this.$emit('open-menu')
+    }
+  }
 }
 </script>
 
@@ -116,7 +133,7 @@ export default {
   height: 70px;
   background: #eeeeee;
   justify-content: space-around;
-  z-index: 999;
+  z-index: 998;
   border-bottom: 1px solid #30182D;
 }
 
@@ -200,4 +217,14 @@ a.nuxt-link-exact-active {
   border: none;
 }
 
+.mobile-menu-button{
+  width: 50px;
+  margin-left: auto;
+}
+@media (max-width: 992px) {
+  .title{
+    display: flex;
+    height: auto;
+  }
+}
 </style>

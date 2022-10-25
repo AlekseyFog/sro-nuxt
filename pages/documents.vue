@@ -30,7 +30,10 @@
 
 <script>
 export default {
-  name: "documents"
+  name: "documents",
+  meta: [
+    {hid: 'description', name: 'description', content: 'СРО "Главпроект" - документы организации'}
+  ],
 }
 </script>
 

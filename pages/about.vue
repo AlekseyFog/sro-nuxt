@@ -24,7 +24,10 @@
 </template>
 <script>
 export default {
-  name: "about"
+  name: "about",
+  meta: [
+    {hid: 'description', name: 'description', content: 'СРО "Главпроект" - об организации'}
+  ]
 }
 </script>
 

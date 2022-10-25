@@ -3,11 +3,13 @@
     <div class="row">
       <div class="col-12 col-lg-5">
         <FormOrder/>
+        <NuxtLink to="/registry">
         <img
           src="~/assets/reestr2.png"
           alt="img"
           class="registry-link_img"
         />
+        </NuxtLink>
       </div>
       <div class="col-12 col-lg-7 infoblock">
         <img
@@ -42,7 +44,12 @@
               "Внутренние инженерные системы отопления, вентиляции, теплогазоснабжения, водоснабжения и водоотведения"
             </li>
           </ul>
-          <div class="infoblock_qualif__button">Перейти к разделу</div>
+          <NuxtLink
+            to="/upQualif"
+            class="infoblock_qualif__button"
+          >
+            Перейти к разделу
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -117,12 +124,16 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: none;
+  background: #FABB38;
   padding: 15px;
-  border: 1px solid #000000;
+  border: 1px solid #cccccc;
   border-radius: 5px;
   height: 50px;
-  width: 250px;
+  width: 200px;
+}
+a, a:hover, a:visited{
+  color: black;
+  text-decoration: none;
 }
 @media (max-width: 992px) {
   .infoblock_img{

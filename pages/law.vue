@@ -10,7 +10,7 @@
         <div class="card_text">
           Градостроительный кодекс Российской Федерации
         </div>
-        <a href="/1.docx">
+        <a href="/doc/gradkodeks.pdf">
           <div class="card_button">Скачать</div>
         </a>
       </div>
@@ -23,7 +23,7 @@
           документации, строительство, реконструкцию, капитальный ремонт особо опасных, технически сложных и уникальных
           объектов"
         </div>
-        <a href="/1.docx">
+        <a href="/doc/postanovlenie%20n-559.pdf">
           <div class="card_button">Скачать</div>
         </a>
       </div>
@@ -39,7 +39,7 @@
           инженерных изысканий, подготовке проектной документации, строительстве, реконструкции, капитальном ремонте
           особо опасных, технически сложных и уникальных объектов"
         </div>
-        <a href="/1.docx">
+        <a href="/doc/8.-699pr-iz-minyusta.pdf">
           <div class="card_button">Скачать</div>
         </a>
       </div>
@@ -52,7 +52,7 @@
           архитектурно-строительного проектирования, строительства, реконструкции, капитального ремонта объектов
           капитального строительства"
         </div>
-        <a href="/1.docx">
+        <a href="/doc/postanovlenie-469.pdf">
           <div class="card_button">Скачать</div>
         </a>
       </div>
@@ -63,7 +63,7 @@
           Регламент о порядке ведения Национального реестра специалистов в области строительства. включение в него
           сведений о физических лицах, их изменения или исключения от 9 ноября 2017г.
         </div>
-        <a href="/1.docx">
+        <a href="/doc/reglamentNRC.pdf">
           <div class="card_button">Скачать</div>
         </a>
       </div>
@@ -75,7 +75,7 @@
           Приказ Федеральной службы по экологическому, технологическому и атомному надзору от 16 февраля 2017г. №58 "Об
           утверждении формы выписки из реестра членов саморегулируемой организации"
         </div>
-        <a href="/1.docx">
+        <a href="/doc/prikazpoekologicheskomu.pdf">
           <div class="card_button">Скачать</div>
         </a>
       </div>
@@ -93,5 +93,23 @@ export default {
 .container {
   background: #f9f9f9;
   padding: 20px;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+.card_button{
+  border: 1px solid black;
+  padding: 10px;
+}
+a, a:visited{
+  color: black;
+  text-decoration: none;
 }
 </style>

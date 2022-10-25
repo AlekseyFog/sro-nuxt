@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 question_block">
-        Остались вопросы? Напишите нам!
+        Остались вопросы?<span @click="showOrderModal()">Напишите нам!</span>
       </div>
     </div>
     <div class="row join_block">
@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="col-12 col-md-6 join_block__button_wrap">
-        <div class="join_block__button">Перейти к разделу</div>
+        <NuxtLink to="/membershipTerms" class="join_block__button">Условия вступления</NuxtLink>
       </div>
     </div>
   </div>
@@ -26,7 +26,13 @@
 
 <script>
 export default {
-  name: "JoinBlock"
+  name: "JoinBlock",
+
+  methods:{
+    showOrderModal(){
+      this.$nuxt.$emit('open-form')
+    }
+  }
 }
 </script>
 
@@ -67,6 +73,14 @@ export default {
   border-radius: 5px;
   height: 50px;
   width: 250px;
+}
+a, a:hover, a:visited{
+  color: black;
+  text-decoration: none;
+}
+span{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media (max-width: 992px) {
